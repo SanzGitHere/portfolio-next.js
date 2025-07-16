@@ -1,0 +1,197 @@
+body{
+  transition: none !important;
+}
+
+
+/* === Skills Section === */
+.skills-section {
+  padding: 4rem 2rem;
+  background: var(--bg-color);
+  font-family: 'Poppins', sans-serif;
+}
+
+.skills-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  gap: 4rem;
+}
+
+.skills-heading {
+  flex: 1 1 40%;
+}
+
+.skills-heading h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--text-color);
+  margin-bottom: 1rem;
+}
+
+.skills-heading h2::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 2px;
+  background-color: #ff4d4d;
+  margin-top: 10px;
+  border-radius: 2px;
+}
+
+.skills-description {
+  margin-top: 2rem;
+  font-style: italic;
+  font-size: 1.05rem;
+  color: var(--paragraph-color);
+  line-height: 1.7;
+}
+
+/* Skills Bars */
+.skills-bars {
+  flex: 1 1 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.skill p {
+  margin-bottom: 0.3rem;
+  font-weight: 500;
+  font-size: 1rem;
+  color: var(--paragraph-color);
+}
+
+.progress-bar {
+  width: 100%;
+  background-color: #33333310;
+  border-radius: 25px;
+  overflow: hidden;
+  height: 20px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.222);
+}
+
+.progress {
+  height: 100%;
+  line-height: 20px;
+  color: white;
+  padding-left: 10px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border-radius: 25px;
+  transition: width 1s ease-in-out;
+}
+
+/* Skill Colors */
+.progress.html,
+.progress.css,
+.progress.js,
+.progress.react,
+.progress.tailwind,
+.progress.bootstrap,
+.progress.nextjs,
+.progress.java,
+.progress.php,
+.progress.node,
+.progress.python,
+.progress.mysql,
+.progress.mongo,
+.progress.firebase,
+.progress.figma,
+.progress.xd,
+.progress.wireframing,
+.progress.prototyping,
+.progress.wp,
+.progress.canva,
+.progress.manual-testing,
+.progress.testcase,
+.progress.postman,
+.progress.bugreport,
+.progress.sqltest,
+.progress.agile,
+.progress.version {
+  background-color: #ff4d4d;
+}
+
+.progress.html { width: 90%; }
+.progress.css { width: 85%; }
+.progress.js { width: 75%; }
+.progress.react { width: 70%; }
+.progress.tailwind { width: 75%; }
+.progress.bootstrap { width: 75%; }
+.progress.nextjs { width: 70%; }
+.progress.java { width: 70%; }
+.progress.php { width: 70%; }
+.progress.node { width: 70%; }
+.progress.python { width: 75%; }
+.progress.mysql { width: 75%; }
+.progress.mongo { width: 75%; }
+.progress.firebase { width: 75%; }
+.progress.figma { width: 80%; }
+.progress.xd { width: 75%; }
+.progress.wireframing { width: 80%; }
+.progress.prototyping { width: 80%; }
+.progress.wp { width: 80%; }
+.progress.canva { width: 85%; }
+.progress.manual-testing { width: 90%; }
+.progress.testcase { width: 80%; }
+.progress.postman { width: 80%; }
+.progress.bugreport { width: 80%; }
+.progress.sqltest { width: 75%; }
+.progress.agile { width: 80%; }
+.progress.version { width: 85%; }
+
+
+.backend-skills-heading,
+.design-skills-heading {
+  flex: 1 1 40%;
+  margin-top: 3rem;
+}
+
+.backend-skills-heading h2,
+.design-skills-heading h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--text-color);
+  margin-bottom: 1rem;
+}
+
+.backend-skills-heading h2::after,
+.design-skills-heading h2::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 2px;
+  background-color: #ff4d4d;
+  margin-top: 10px;
+  border-radius: 2px;
+}
+
+.backend-skills-description,
+.design-skills-description {
+  margin-top: 2rem;
+  font-style: italic;
+  font-size: 1.05rem;
+  color: var(--paragraph-color);
+  line-height: 1.7;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .skills-container {
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+
+  .skills-heading, .skills-bars {
+    flex: 1 1 100%;
+  }
+}
+
+body.dark-mode .progress-bar {
+  background-color: #333 !important;
+  box-shadow: none !important;
+}

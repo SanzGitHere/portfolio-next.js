@@ -1,0 +1,103 @@
+.navbar {
+  position: relative;
+  width: 100%;
+  padding: 1.5rem 2rem;
+  display: flex;
+  align-items: center;
+  background: transparent;
+  color: var(--text-color);
+  margin-top: 1.5rem;
+}
+
+/* Hidden checkbox */
+.navToggle {
+  display: none;
+}
+
+/* Hamburger icon */
+.navToggleLabel {
+  display: none;
+  font-size: 2.4rem;
+  cursor: pointer;
+  color: var(--text-color);
+  position: absolute;
+  top: 1.5rem;
+  right: 2rem;
+  z-index: 1002;
+}
+
+.navCenterWrapper {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.navLinks {
+  list-style: none;
+  display: flex;
+  gap: 6rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.navLinks li a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.3rem;
+  transition: color 0.3s ease;
+}
+
+.navLinks li a:hover {
+  color: #ff4d4d;
+}
+
+.rightSide {
+  margin-left: auto; /* push theme toggle right */
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 1003;
+  margin-top: 0.5rem; /* adjust as needed */
+}
+
+/* Responsive Nav */
+@media screen and (max-width: 768px) {
+  .navbar {
+    justify-content: space-between;
+    padding: 1.5rem 1.5rem;
+  }
+
+  .navToggleLabel {
+    display: block;
+    top: 2rem;
+  }
+
+  .navCenterWrapper {
+    position: static;
+    transform: none;
+    width: 100%;
+  }
+
+  .navLinks {
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: var(--bg-color);
+    width: 100%;
+    padding: 1.5rem 2rem;
+    display: none;
+    gap: 1rem;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    align-items: center; 
+    text-align: center;  
+  }
+
+  /* Show menu when checkbox checked */
+  .navToggle:checked + .navToggleLabel + .navCenterWrapper .navLinks {
+    display: flex;
+  }
+}
