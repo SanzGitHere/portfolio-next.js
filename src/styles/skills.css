@@ -148,7 +148,6 @@ body{
 .backend-skills-heading,
 .design-skills-heading {
   flex: 1 1 40%;
-  margin-top: 3rem;
 }
 
 .backend-skills-heading h2,
