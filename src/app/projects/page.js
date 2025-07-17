@@ -7,10 +7,19 @@ import { useEffect, useState } from 'react';
 export default function ProjectsPage() {
   const [activeIndex, setActiveIndex] = useState(0);
   const projects = [
+
+    {
+      img: '/images/Portfolio.png',
+      title: 'Personal Website',
+      desc: 'Responsive personal portfolio website built with Next.js to showcase my projects, skills, and resume.',
+      tech: ['React', 'Next.js', 'javascript(ES6+)', 'CSS Modules'],
+      github: 'https://github.com/SanzGitHere/portfolio-next.js',
+    },
+
     {
       img: '/images/Clothing Store.png',
       title: 'Online Clothing Store',
-      desc: 'web-based platform designed to provide customers with a seamless shopping experience for a wide variety of clothing.',
+      desc: 'Web-based platform designed to provide customers with a seamless shopping experience for a wide variety of clothing.',
       tech: ['HTML', 'CSS', 'JavaScript', 'Bootstrap', 'PHP', 'MySQL'],
       github: 'https://github.com/SanzGitHere/Online-Clothing-Store',
     },
@@ -31,7 +40,7 @@ export default function ProjectsPage() {
     {
       img: '/images/Leaf Diesease.png',
       title: 'Leaf Disease Detection',
-      desc: 'A smart agriculture solution built with Python, CNN, and real-time image classification for disease identification that can be used for future via web or mobile apps.',
+      desc: 'Smart agriculture solution built with Python, CNN, and real-time image classification for disease identification that can be used for future via web or mobile apps.',
       tech: ['Python', 'ML Algorithm', 'Image Processing'],
       github: 'https://github.com/SanzGitHere/Leaf-Disease-Detection',
     },
@@ -41,13 +50,6 @@ export default function ProjectsPage() {
       desc: 'Mini App Store UI built with HTML, CSS, and JavaScript featuring interactive sections for Games, Movies, and Apps. Fully responsive and beginner-friendly frontend project.',
       tech: ['HTML', 'CSS', 'JavaScript', 'MySQL'],
       github: 'https://github.com/SanzGitHere/Mini-AppStore',
-    },
-    {
-      img: '/images/Portfolio.png',
-      title: 'My Sample Portfolio',
-      desc: 'A responsive personal portfolio website to showcase my skills, projects, and services with light/dark mode support and smooth UI/UX.',
-      tech: ['HTML', 'CSS', 'JavaScript'],
-      github: 'https://github.com/SanzGitHere/my-portfolio',
     },
   ];
 
