@@ -4,10 +4,11 @@ import Navbar from '../components/navbar';
 import Footer from '../components/footer';
 
 export const metadata = {
-  title: "Shanjeyan's Portfolio",
-  description: 'Passionate Software Engineer Undergraduate',
+  title: "Shanjeyan Vinayagamoorthy Portfolio Website",
+  description: "Official portfolio of V. Shanjeyan - showcasing skills, projects, and more.",
+  keywords: ["Shanjeyan", "Portfolio", "Software Engineer", "Web Developer", "Full Stack"],
+  authors: [{ name: "Shanjeyan Vinayagamoorthy" }],
 };
-
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
