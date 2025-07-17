@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Shanjeyan Vinayagamoorthy Portfolio Website",
+  title: "Shanjeyan Vinayagamoorthy Portfolio",
 };
 
 export default function RootLayout({ children }) {
