@@ -1,5 +1,10 @@
+import '../styles/globals.css';
+import Navbar from '../components/navbar';
+import Footer from '../components/footer';
+
+
 export const metadata = {
-  title: "Shanjeyan Vinayagamoorthy Portfolio",
+  title: "Shanjeyan Vinayagamoorthy Portfolio Website",
 };
 
 export default function RootLayout({ children }) {
@@ -26,7 +31,12 @@ export default function RootLayout({ children }) {
           rel="stylesheet"
         />
       </head>
-      <body>{children}</body>
+      
+      <body>
+        <Navbar/>
+        {children}
+        <Footer/>
+        </body>
     </html>
   );
 }
